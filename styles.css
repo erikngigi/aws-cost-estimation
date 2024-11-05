@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #0073e6;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Main content layout */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+/* Card grid styling */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card h2 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0073e6;
+  color: #ffffff;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.9em;
+}
