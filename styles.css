@@ -34,6 +34,34 @@ header p {
   color: #555;
 }
 
+/* Navigation bar content layout */
+nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 /* Main content layout */
 main {
   width: 90%;
@@ -62,7 +90,7 @@ main {
     box-shadow 0.2s;
 }
 
-.card h2 {
+.card h3 {
   color: #0073e6;
   margin-bottom: 10px;
 }
@@ -107,8 +135,9 @@ footer p {
 .metadata .label {
   display: inline-block;
   font-weight: bold;
+  color: #007bff;
   margin-right: 0.5rem;
-  width: 20rem;
+  width: 25rem;
 }
 
 .warnings {
@@ -196,4 +225,23 @@ table.overall-total {
 
 table.overall-total {
   margin-top: 1rem;
+}
+
+h2 {
+  padding: 20px;
+  color: #007bff;
+}
+
+ol {
+  padding: 20px; /* Padding inside the list */
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 15px; /* Space between list items */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+strong {
+  color: #007bff; /* Blue color for strong text */
 }
