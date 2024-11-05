@@ -42,7 +42,7 @@
                 <li>
                     <span class="label">Reserved Instance Payment Option:</span>
                     <span class="value">no upfront cost</span>
-                </li
+                </li>
                 <li>
                     <span class="label"></span>
                     <span class="value"></span>
@@ -57,6 +57,68 @@
                 <td class="monthly-cost">Monthly Cost</td>
             </thead>
             <tbody>
+                <tr class="resource top-level">
+                    <td class="name">module.instance.aws_instance.security_video_storage</td>
+                    <td class="monthly-quantity"></td>
+                    <td class="unit"></td>
+                    <td class="monthly-cost"></td>
+                </tr>
+                <tr class="tags">
+                    <td class="name">
+                        <span class="label">Tags:</span>
+                        <span>Name=security-video-storage</span>
+                    </td>
+                    <td class="monthly-quantity"></td>
+                    <td class="unit"></td>
+                    <td class="monthly-cost"></td>
+                </tr>
+                <tr class="cost-component">
+                    <td class="name">
+                        <span class="arrow">&#8627;</span>
+                        Instance usage (Linux/UNIX, on-demand, c5.4xlarge)
+                    </td>
+                    <td class="monthly-quantity">730</td>
+                    <td class="unit">hours</td>
+                    <td class="monthly-cost">$496.40</td>
+                </tr>
+                <tr class="resource">
+                    <td class="name">
+                        <span class="arrow">&#8627;</span>
+                        root_block_device
+                    </td>
+                    <td class="monthly-quantity"></td>
+                    <td class="unit"></td>
+                    <td class="monthly-cost"></td>
+                </tr>
+                <tr class="cost-component">
+                    <td class="name">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="arrow">&#8627;</span>
+                        Storage (general purpose SSD, gp2)
+                    </td>
+                    <td class="monthly-quantity">100</td>
+                    <td class="unit">GB</td>
+                    <td class="monthly-cost">$10.00</td>
+                </tr>
+                <tr class="resource">
+                    <td class="name">
+                        <span class="arrow">&#8627;</span>
+                        ebs_block_device[0]
+                    </td>
+                    <td class="monthly-quantity"></td>
+                    <td class="unit"></td>
+                    <td class="monthly-cost"></td>
+                </tr>
+                <tr class="cost-component">
+                    <td class="name">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="arrow">&#8627;</span>
+                        Storage (general purpose SSD, gp2)
+                    </td>
+                    <td class="monthly-quantity">100</td>
+                    <td class="unit">GB</td>
+                    <td class="monthly-cost">$10.00</td>
+                </tr>
                 <tr class="resource top-level">
                     <td class="name">module.instance.aws_s3_bucket.security_video_storage</td>
                     <td class="monthly-quantity"></td>
@@ -181,71 +243,9 @@
                     <td class="unit">1k requests</td>
                     <td class="monthly-cost">$4.00</td>
                 </tr>
-                <tr class="resource top-level">
-                    <td class="name">module.instance.aws_instance.security_video_storage</td>
-                    <td class="monthly-quantity"></td>
-                    <td class="unit"></td>
-                    <td class="monthly-cost"></td>
-                </tr>
-                <tr class="tags">
-                    <td class="name">
-                        <span class="label">Tags:</span>
-                        <span>Name=security-video-storage</span>
-                    </td>
-                    <td class="monthly-quantity"></td>
-                    <td class="unit"></td>
-                    <td class="monthly-cost"></td>
-                </tr>
-                <tr class="cost-component">
-                    <td class="name">
-                        <span class="arrow">&#8627;</span>
-                        Instance usage (Linux/UNIX, on-demand, c5.xlarge)
-                    </td>
-                    <td class="monthly-quantity">730</td>
-                    <td class="unit">hours</td>
-                    <td class="monthly-cost">$124.10</td>
-                </tr>
-                <tr class="resource">
-                    <td class="name">
-                        <span class="arrow">&#8627;</span>
-                        root_block_device
-                    </td>
-                    <td class="monthly-quantity"></td>
-                    <td class="unit"></td>
-                    <td class="monthly-cost"></td>
-                </tr>
-                <tr class="cost-component">
-                    <td class="name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="arrow">&#8627;</span>
-                        Storage (general purpose SSD, gp2)
-                    </td>
-                    <td class="monthly-quantity">100</td>
-                    <td class="unit">GB</td>
-                    <td class="monthly-cost">$10.00</td>
-                </tr>
-                <tr class="resource">
-                    <td class="name">
-                        <span class="arrow">&#8627;</span>
-                        ebs_block_device[0]
-                    </td>
-                    <td class="monthly-quantity"></td>
-                    <td class="unit"></td>
-                    <td class="monthly-cost"></td>
-                </tr>
-                <tr class="cost-component">
-                    <td class="name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="arrow">&#8627;</span>
-                        Storage (general purpose SSD, gp2)
-                    </td>
-                    <td class="monthly-quantity">100</td>
-                    <td class="unit">GB</td>
-                    <td class="monthly-cost">$10.00</td>
-                </tr>
                 <tr class="total">
                     <td class="name" colspan="3">Project total</td>
-                    <td class="monthly-cost">$314.00</td>
+                    <td class="monthly-cost">$686.30</td>
                 </tr>
             </tbody>
         </table>
@@ -253,7 +253,7 @@
             <tbody>
                 <tr class="total">
                     <td class="name" colspan="3">Overall total</td>
-                    <td class="monthly-cost">$314.00</td>
+                    <td class="monthly-cost">$686.30</td>
                 </tr>
             </tbody>
         </table>
@@ -263,19 +263,18 @@
                 <br />
                 ∙ 2 were estimated
                 <br />
-                ∙ 7 were
-                free
+                ∙ 7 were free
             </p>
         </div>
         <h2>Cost Breakdown</h2>
         <ol>
             <li>
-                <strong>Storage (frequent access):</strong> Amount of data
-                stored that is frequently accessed, costing $115.00 for 5,000 GB.
+                <strong>Storage (frequent access):</strong> Amount of data stored that
+                is frequently accessed, costing $115.00 for 5,000 GB.
             </li>
             <li>
-                <strong>Storage (archive access):</strong> Data stored for
-                long-term archival, costing $18.00 for 5,000 GB.
+                <strong>Storage (archive access):</strong> Data stored for long-term
+                archival, costing $18.00 for 5,000 GB.
             </li>
             <li>
                 <strong>Monitoring and automation:</strong> Costs for monitoring
@@ -283,18 +282,16 @@
             </li>
             <li>
                 <strong>PUT, COPY, POST, LIST requests:</strong> Costs for write
-                operations or requests made to the AWS service, with 6,000,000
-                requests costing $30.00.
+                operations or requests made to the AWS service, with 6,000,000 requests
+                costing $30.00.
             </li>
             <li>
-                <strong>GET, SELECT, and all other requests:</strong> Costs
-                associated with retrieving data from AWS, with 6,000,000
-                requests costing $2.40.
+                <strong>GET, SELECT, and all other requests:</strong> Costs associated
+                with retrieving data from AWS, with 6,000,000 requests costing $2.40.
             </li>
             <li>
-                <strong>Lifecycle transition:</strong> Charges for transitioning
-                objects between storage classes, with 400,000 requests costing
-                $4.00.
+                <strong>Lifecycle transition:</strong> Charges for transitioning objects
+                between storage classes, with 400,000 requests costing $4.00.
             </li>
         </ol>
     </body>
