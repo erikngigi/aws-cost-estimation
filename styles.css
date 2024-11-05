@@ -90,3 +90,110 @@ footer {
 footer p {
   font-size: 0.9em;
 }
+
+.metadata {
+  margin-bottom: 1.5rem;
+}
+
+.metadata ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.metadata ul li {
+  margin-bottom: 0.5rem;
+}
+
+.metadata .label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  width: 20rem;
+}
+
+.warnings {
+  margin-top: 1.5rem;
+}
+
+table {
+  border: 1px solid #6b7280;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+}
+
+td.name {
+  max-width: 32rem;
+}
+
+td.monthly-quantity,
+td.price,
+td.hourly-cost,
+td.monthly-cost {
+  text-align: right;
+}
+
+tr.group {
+  background-color: #e0e7ff;
+}
+
+tr.resource {
+  background-color: #e5e7eb;
+}
+
+tr.resource.top-level {
+  background-color: #6b7280;
+  color: #ffffff;
+}
+
+tr.tags {
+  background-color: #6b7280;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+tr.tags td {
+  padding-top: 0;
+}
+
+tr.total {
+  background-color: #d8dce2;
+  font-weight: bold;
+}
+
+table.overall-total tr.total {
+  background-color: #ffdfb9;
+  font-weight: bold;
+}
+
+table.overall-total tr.total td {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.arrow {
+  color: #96a0b5;
+}
+
+.usage-cost {
+  color: #6b7280;
+}
+
+@media screen and (max-width: 1024px) {
+  table.breakdown,
+  table.overall-total {
+    min-width: auto;
+  }
+}
+table.breakdown,
+table.overall-total {
+  min-width: 946px;
+}
+
+table.overall-total {
+  margin-top: 1rem;
+}
